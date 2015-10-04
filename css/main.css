@@ -1,0 +1,37 @@
+html, body {
+   margin:0;
+   padding:0;
+   height:100%;
+}
+
+.main_container {
+	position: relative;
+	height: 100%;
+	width: 100%;
+	background-color: #3470d9;
+}
+
+.form_heading {
+	margin-top: 43px;
+    margin-left: 50px;
+    margin-bottom: 20px;
+    margin-right: 50px;
+    font-weight: bold;
+    color: #3470d9;
+}
+
+.form_container {
+	position: absolute;
+	height: 80%;
+	width: 50%;
+	margin-left: 25%;
+	margin-right: 25%;
+	margin-top: 5%;
+	margin-bottom: 5%;
+	background-color: #ffffff;
+	overflow: auto
+}
+
+.problems {
+	 margin-left: 50px;
+}

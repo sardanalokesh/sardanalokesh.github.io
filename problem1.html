@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Problem 1</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<!-- including bootstrp for styling-->
+		<link rel="stylesheet" href="css/lib/bootstrap.min.css">
+		<link rel="stylesheet" href="css/problem1.css">
+	</head>
+	<body>
+		<div class="main_container">
+			<div id="tableContainer" class="table_container">
+				<div class="table_heading">
+					<h2>All Awesome People</h2>
+				</div>
+				<div class="navigate_other pull-right">
+					<h4><a href="problem0.html">Create Record</a></h4>
+				</div>
+				<div style="clear: both;"></div>
+				<div id="usersTable" class="u_table">
+					<div class="u_thead">
+						<div class="u_tr row">
+							<div class="u_th col-sm-1">#</div>
+							<div class="u_th col-sm-1 column_header" data-column="firstName" draggable="true">First Name<span class="glyphicon"></span></div>
+							<div class="u_th col-sm-1 column_header" data-column="lastName" draggable="true">Last Name<span class="glyphicon"></div>
+							<div class="u_th col-sm-1 column_header" data-column="gender" draggable="true">Gender<span class="glyphicon"></div>
+							<div class="u_th col-sm-1 column_header" data-column="dob" draggable="true">Birthday<span class="glyphicon"></div>
+							<div class="u_th col-sm-1 column_header" data-column="country" draggable="true">Country<span class="glyphicon"></div>
+							<div class="u_th col-sm-2 column_header" data-column="phone" draggable="true">Phone<span class="glyphicon"></div>
+							<div class="u_th col-sm-2 column_header" data-column="email" draggable="true">Email<span class="glyphicon"></div>
+							<div class="u_th col-sm-1 column_header" data-column="username" draggable="true">Username<span class="glyphicon"></div>
+							<div class="u_th col-sm-1 column_header" data-column="password" draggable="true">Password<span class="glyphicon"></div>
+						</div>
+						<div class="u_tr row" id="searchRow">
+							<div class="u_th col-sm-1"></div>
+							<div class="u_th col-sm-1" data-column="firstName"><input type="text" class="search_box" /></div>
+							<div class="u_th col-sm-1" data-column="lastName"><input type="text" class="search_box" /></div>
+							<div class="u_th col-sm-1" data-column="gender"><input type="text" class="search_box" /></div>
+							<div class="u_th col-sm-1" data-column="dob"><input type="text" class="search_box" /></div>
+							<div class="u_th col-sm-1" data-column="country" ><input type="text" class="search_box" /></div>
+							<div class="u_th col-sm-2" data-column="phone"><input type="text" class="search_box" /></div>
+							<div class="u_th col-sm-2" data-column="email"><input type="text" class="search_box" /></div>
+							<div class="u_th col-sm-1" data-column="username"><input type="text" class="search_box" /></div>
+							<div class="u_th col-sm-1" data-column="password"><input type="text" class="search_box" /></div>
+						</div>
+					</div>
+					<div class="u_tbody row col-sm-12">
+					</div>
+				</div>
+				<div style="clear: both;"></div>
+				<div id="footer">
+					<span>* - Type and press Return/Enter key for search</span>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="js/usersData.js"></script>
+		<script type="text/javascript" src="js/problem1.js"></script>
+		<!-- including jquery as it's required by bootstrap -->
+		<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+		<!-- including bootstrp for styling-->
+		<script src="js/lib/bootstrap.min.js"></script>
+	</body>
+</html>
