@@ -2,7 +2,6 @@
 <html>
 	<head>
 		<title>Problem 0</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 		<!-- including bootstrp for styling-->
 		<link rel="stylesheet" href="css/lib/bootstrap.min.css">
 		<link rel="stylesheet" href="css/problem0.css">
@@ -18,62 +17,64 @@
 				</div>
 				<div style="clear: both;"></div>
 				<form id="userDetailForm" >
-					<div class="row form-group">
-						<div class="col-sm-6 form_component_left">
-						    <input id="firstName" name="firstName" type="text" class="form-control" placeholder="First Name" />
-						    <div class="error_container"  style="display: none;"></div>
-						</div>
-						<div class="col-sm-6 form_component_right">
-					    	<input id="lastName" name="lastName" type="text" class="form-control" placeholder="Last Name"/>
-					    	<div class="error_container" style="display: none;"></div>
+					<div style="position: relative; overflow: auto; height: 330px;">
+						<div class="row form-group">
+							<div class="col-sm-6 form_component_left">
+							    <input id="firstName" name="firstName" type="text" class="form-control" placeholder="First Name" />
+							    <div class="error_container"  style="display: none;"></div>
+							</div>
+							<div class="col-sm-6 form_component_right">
+						    	<input id="lastName" name="lastName" type="text" class="form-control" placeholder="Last Name"/>
+						    	<div class="error_container" style="display: none;"></div>
+						    </div>
 					    </div>
-				    </div>
-				    <div class="row form-group">
-					    <div class="col-sm-6 form_component_left">
-					    	<select id="gender" name="gender" class="form-control">			   
-						        <option value="male">Male</option>
-						        <option value="female">Female</option>
-						    </select>
+					    <div class="row form-group">
+						    <div class="col-sm-6 form_component_left">
+						    	<select id="gender" name="gender" class="form-control">			   
+							        <option value="male">Male</option>
+							        <option value="female">Female</option>
+							    </select>
+							    <div class="error_container" style="display: none;"></div>
+						    </div>
+						    <div class="col-sm-6 form_component_right">
+						    	<input id="dob" name="dob" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" class="form-control" placeholder="Date of birth (yyyy-mm-dd)"/>
+						    	<div class="error_container" style="display: none;"></div>
+						    </div>
+					    </div>
+						<div class="row form-group">
+							<div class="col-sm-6 form_component_left">
+						    	<select id="country" name="country" class="form-control">
+						    	</select>
+						    	<div class="error_container" style="display: none;"></div>
+						   	</div>
+						   	<div class="col-sm-6 form_component_right">
+						   		<div class="col-sm-3 no_lateral_padding">
+						     		<input id="country-phone-code" name="country-phone-code" size="4" type="tel" class="form-control" placeholder="Code"/> 
+						     	</div>
+						     	<div class="col-sm-1 no_lateral_padding" style="text-align: center; padding-top: 5px;">-</div>
+						     	<div class="col-sm-8 no_lateral_padding">
+						    		<input id="phone" name="phone" size="10" type="tel" class="form-control" placeholder="Phone Number"/>
+						    	</div>
+						    	<div class="error_container" style="display: none;"></div>
+						    </div>
+					    </div>
+					    <div class="row form-group">					    
+						    <input id="email" name="email" type="text" class="form-control" placeholder="Email"/>
 						    <div class="error_container" style="display: none;"></div>
 					    </div>
-					    <div class="col-sm-6 form_component_right">
-					    	<input id="dob" name="dob" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" class="form-control" placeholder="Date of birth (yyyy-mm-dd)"/>
-					    	<div class="error_container" style="display: none;"></div>
-					    </div>
-				    </div>
-					<div class="row form-group">
-						<div class="col-sm-6 form_component_left">
-					    	<select id="country" name="country" class="form-control">
-					    	</select>
-					    	<div class="error_container" style="display: none;"></div>
-					   	</div>
-					   	<div class="col-sm-6 form_component_right">
-					   		<div class="col-sm-3 no_lateral_padding">
-					     		<input id="country-phone-code" name="country-phone-code" size="4" type="tel" class="form-control" placeholder="Code"/> 
-					     	</div>
-					     	<div class="col-sm-1 no_lateral_padding" style="text-align: center; padding-top: 5px;">-</div>
-					     	<div class="col-sm-8 no_lateral_padding">
-					    		<input id="phone" name="phone" size="10" type="tel" class="form-control" placeholder="Phone Number"/>
-					    	</div>
-					    	<div class="error_container" style="display: none;"></div>
-					    </div>
-				    </div>
-				    <div class="row form-group">					    
-					    <input id="email" name="email" type="text" class="form-control" placeholder="Email"/>
-					    <div class="error_container" style="display: none;"></div>
-				    </div>
-				    <div class="row form-group">
-					    <input id="username" name="username" type="text" class="form-control" placeholder="Username"/>
-					    <div class="error_container" style="display: none;"></div>
-					</div>
-					<div class="row form-group">
-						<div class="col-sm-6 form_component_left">
-					    	<input id="password" name="password" type="password" class="form-control" placeholder="Password" />
-					    	<div class="error_container" style="display: none;"></div>
-					    </div>
-					    <div class="col-sm-6 form_component_right">
-					    	<input id="repassword" name="repassword" type="password" class="form-control" placeholder="Re-type password"/>
-					    	<div class="error_container" style="display: none;"></div>
+					    <div class="row form-group">
+						    <input id="username" name="username" type="text" class="form-control" placeholder="Username"/>
+						    <div class="error_container" style="display: none;"></div>
+						</div>
+						<div class="row form-group">
+							<div class="col-sm-6 form_component_left">
+						    	<input id="password" name="password" type="password" class="form-control" placeholder="Password" />
+						    	<div class="error_container" style="display: none;"></div>
+						    </div>
+						    <div class="col-sm-6 form_component_right">
+						    	<input id="repassword" name="repassword" type="password" class="form-control" placeholder="Re-type password"/>
+						    	<div class="error_container" style="display: none;"></div>
+						    </div>
 					    </div>
 				    </div>
 				    <div class="row form-group">

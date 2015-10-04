@@ -208,7 +208,6 @@ function loadUsers(users, usersTable) {
 		var html = "<div class='u_th col-sm-1'>" + (i+1) + "</div>";
 		for (var k = 0; k < columnHeads.length; k++) {
 			var columnName = columnHeads[k].dataset.column;
-			console.log(columnName);
 			if (columnName == 'email' || columnName == 'phone')
 				html += "<div class='u_td col-sm-2' data-column='"+columnName+"'>" + users[i][columnName] + "</div>";
 			else
@@ -228,5 +227,5 @@ function addClass(element, uClass) {
 }
 
 function removeClass(element, uClass) {
-	element.className = element.className.replace(uClass, "");
+	element.className = element.className.replace(uClass, "").trim();
 }
