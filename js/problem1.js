@@ -184,7 +184,7 @@ function loadUsers(users, usersTable) {
 		tr.addEventListener('dragenter', function(e) {
 			var currentRow = e.currentTarget;
 			var parent = currentRow.parentNode;
-			parent.insertBefore(placeholder, currentRow);
+			parent.insertBefore(placeholder, currentRow.nextSibling);
 		});
 		
 		//allowing row to be dropped on placeholder
