@@ -182,7 +182,7 @@ function loadUsers(users, usersTable) {
 		var placeholder = document.createElement('div');
 		placeholder.className = 'placeholder';
 		tr.addEventListener('dragenter', function(e) {
-			var currentRow = e.target;
+			var currentRow = e.currentTarget;
 			var parent = currentRow.parentNode;
 			parent.insertBefore(placeholder, currentRow);
 		});

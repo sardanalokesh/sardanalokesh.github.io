@@ -92,7 +92,7 @@ html, body {
 .u_table > .u_tbody > .placeholder {
 	width: 100%;
 	line-height: 1.42857143;
-	height: 56px;
+	height: 40px;
 }
 
 .current_sort_column {
